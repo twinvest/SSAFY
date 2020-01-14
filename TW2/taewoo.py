@@ -1,4 +1,5 @@
 import pandas as pd
+
 data = ['2016','2017','2018','2019']
 result = pd.Series(data)
 print(result)
@@ -91,4 +92,13 @@ print()
 print(df2[['name','grade']])
 print()
 print(df2[['etc','name']])
+print()
+df2['etc'] = 0
+print(df2)
+print()
+
+#연습문제3
+df2['grade'] = ['A','B','C','D']
+df2['etc'] = [11, 22, 33, 44]
+print(df2)
 print()
